@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from .views import root_route
 
 from profiles import views as profiles_views
 from posts import views as posts_views
@@ -23,8 +24,13 @@ from likes import views as likes_views
 from followers import views as followers_views
 
 urlpatterns = [
+    path('', root_route),
     path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls')),
+    path('dj-rest-auth/', include('dj_rest_auth.urls')),
+    path(
+        'dj-rest-auth/registration/', include('dj_rest_auth.registration.urls')
+    ),
     path('profiles/', profiles_views.ProfileList.as_view()),
     path('profiles/<int:pk>/', profiles_views.ProfileDetail.as_view()),
     path('posts/', posts_views.PostList.as_view()),
