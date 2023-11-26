@@ -60,7 +60,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEV' in os.environ
 
-ALLOWED_HOSTS = [os.environ.get('drf-api2023-appl-14278a611b47.herokuapp.com'),'localhost', ]
+ALLOWED_HOSTS = ['drf-api2023-appl-14278a611b47.herokuapp.com']
 
 
 # Application definition
@@ -109,7 +109,7 @@ if 'CLIENT_ORIGIN_DEV' in os.environ:
     CORS_ALLOWED_ORIGIN_REGEXES = [
         rf"{extracted_url}.(eu|us)\d+\.codeanyapp\.com$",
     ]
-    
+
 CORS_ALLOW_CREDENTIALS = True
 
 ROOT_URLCONF = 'drf_api.urls'
