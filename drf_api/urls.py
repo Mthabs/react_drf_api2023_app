@@ -16,8 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from profiles import views as profiles_views
+from posts import views as posts_views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls')),
-    path('', include('profiles.urls')),
+    path('profiles/', profiles_views.ProfileList.as_view()),
+    path('profiles/<int:pk>/', profiles_views.ProfileDetail.as_view()),
+    path('posts/', posts_views.PostList.as_view()),
+    path('posts/<int:pk>/', posts_views.PostDetail.as_view()),
 ]
