@@ -18,7 +18,7 @@ from django.urls import path, include
 
 from profiles import views as profiles_views
 from posts import views as posts_views
-from posts import views as comments_views
+from comments import views as comments_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
