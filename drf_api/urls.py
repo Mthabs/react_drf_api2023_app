@@ -18,6 +18,7 @@ from django.urls import path, include
 
 from profiles import views as profiles_views
 from posts import views as posts_views
+from posts import views as comments_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,4 +27,6 @@ urlpatterns = [
     path('profiles/<int:pk>/', profiles_views.ProfileDetail.as_view()),
     path('posts/', posts_views.PostList.as_view()),
     path('posts/<int:pk>/', posts_views.PostDetail.as_view()),
+    path('comments/', views.CommentList.as_view()),
+    path('comments/<int:pk>/', views.CommentDetail.as_view()),
 ]
