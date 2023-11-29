@@ -61,7 +61,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEV' in os.environ
 
-ALLOWED_HOSTS = ['drf-api2023-appl-14278a611b47.herokuapp.com']
+ALLOWED_HOSTS = ['8000-mthabs-react-drf-api2023-w4yuah359v.us2.codeanyapp.com']
 
 
 # Application definition
