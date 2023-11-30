@@ -59,7 +59,7 @@ REST_AUTH_SERIALIZERS = {
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEV' in os.environ
+DEBUG = True
 
 ALLOWED_HOSTS = [os.environ.get('ALLOWED_HOST'),
 '8000-mthabs-react-drf-api2023-w4yuah359v.us2.codeanyapp.com']
