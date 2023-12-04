@@ -62,7 +62,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = "DEV" in os.environ
 
 ALLOWED_HOSTS = [os.environ.get('ALLOWED_HOST'),
-'8000-mthabs-react-drf-api2023-w4yuah359v.us2.codeanyapp.com']
+'8000-mthabs-reactdrfapi2023a-6ccruoofezt.ws-eu106.gitpod.io']
 
 
 # Application definition
