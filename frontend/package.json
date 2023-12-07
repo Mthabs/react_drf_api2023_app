@@ -49,5 +49,5 @@
     "node": "16.19.1",
     "npm": "8.19.3"
   },
-  "proxy": "http://localhost:8000/"
+  "proxy": "http://8000-mthabs-reactdrfapi2023a-6ccruoofezt.ws-eu106.gitpod.io:8000/"
 }

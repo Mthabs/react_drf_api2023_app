@@ -61,7 +61,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = "DEBUG" in os.environ
 
 ALLOWED_HOSTS = [os.environ.get('ALLOWED_HOST'),
-'localhost']
+'8000-mthabs-reactdrfapi2023a-6ccruoofezt.ws-eu106.gitpod.io']
 
 
 # Application definition
